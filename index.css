@@ -6,8 +6,14 @@
 
 /* ****************************************** NAVBAR ************************************** */
 .navbar__container{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1.5rem;
+    background: transparent;
 }
 
 .logo__section{
@@ -127,3 +133,78 @@ margin-top: 15px;
     height: 500px;
 }
 
+
+/* Gap Line */
+.gap_line{
+    width: 90%;
+    height: 1px;
+    background-color: tomato;
+margin-left: 6rem;
+}
+
+/* ***************************************** Experience Section ****************************** */
+.experience_1{
+    width: 80%;
+    height: 200px;
+    box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    margin: 1rem 5rem 1rem 8rem;
+    display: flex;
+}
+
+.experience_description{
+display: flex;
+flex-direction: column;
+position: relative;
+top:3rem;
+left: 3rem;
+}
+
+.experience_description span:nth-child(1){
+background-color: #545961;
+border-radius: 1.25rem;
+width: 140px;
+height: auto;
+padding: 2px 8px;
+color: #c4cfde;
+margin-bottom: 0.5rem;
+}
+
+.experience_description span:nth-child(2){
+font-size: x-large;
+margin-bottom: 1rem;
+}
+
+.experience_description span:nth-child(3){
+    font-size: large;
+    margin-bottom: 0.5rem;
+    }
+
+.experience_description span:nth-child(4){
+    font-size: small;
+    margin-bottom: 0.5rem;
+}
+
+.gradution_image{
+    width: 15.6rem;
+    height: 10rem;
+    position: relative;
+    top: 1.5rem;
+    left: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.experience_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    }
+
+.experience_heading span:nth-child(odd){
+    color: #ff014f;
+        font-size: large;
+    }
+
+.experience_heading span:nth-child(even){
+        font-size: 4rem;
+    }
