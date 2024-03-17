@@ -9,11 +9,20 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    /* position: fixed;
+    top: 0;
+  
+    padding-top: 1.5rem;
+    background: transparent; */
+
+    background-color: rgba(33, 36, 40, 0.8705882353);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     position: fixed;
+    backdrop-filter: blur(15px);
     top: 0;
     left: 0;
-    padding-top: 1.5rem;
-    background: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .logo__section{
@@ -38,22 +47,43 @@ margin-left: 10px;
     display: flex;
     list-style: none;
     margin-top: 30px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .menu__list > li{
     padding-left: 30px;
 }
 
-.menu__list > li :hover{
+.menu__list li:hover{
+    cursor: pointer;
     color: red;
 }
-
-/* ******************************************* END OF NAVBAR ***************************** */
+/* **************************************** SCROLL BAR *********************************** */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(17, 16, 16); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0b091108; 
+  }
 /* ********************************************* MAIN ************************************ */
 .main__container{
     display: flex;
-    margin: 100px 100px 100px 100px;
+    margin: 150px 100px 100px 100px;
     gap: 20px;
 }
 
@@ -138,16 +168,23 @@ margin-top: 15px;
 .gap_line{
     width: 90%;
     height: 1px;
-    background-color: tomato;
+    background-color: rgba(22, 22, 24, 1);
 margin-left: 6rem;
+margin-top: 2rem;
 }
 
 /* ***************************************** Experience Section ****************************** */
+.experience__section{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+}
 .experience_1{
     width: 80%;
     height: 200px;
     box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    margin: 1rem 5rem 1rem 8rem;
+    /* margin: 1rem 5rem 1rem 8rem; */
     display: flex;
 }
 
@@ -208,3 +245,59 @@ margin-bottom: 1rem;
 .experience_heading span:nth-child(even){
         font-size: 4rem;
     }
+
+/* ************************************ Education **************************************** */
+.grades_section {
+    position: relative;
+    left: 19rem;
+    top: 4.5rem;
+}
+.grades_section__1{
+    position: relative;
+    left: 18rem;
+    top: 4.5rem;   
+}
+.grades_section__2{
+    position: relative;
+    left: 6rem;
+    top: 4.5rem;   
+}
+.grades_section button{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    color:#ff014f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.grades_section__1 button{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    color:#ff014f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.grades_section__2 button{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    color:#ff014f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.education__span{
+    width: 85px !important;
+}
