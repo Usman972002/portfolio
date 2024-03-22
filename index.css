@@ -198,14 +198,17 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   display: flex;
   border-radius: 10px;
+  align-items: center;
+  gap: 30px;
+  padding-left: 30px;
 }
 
 #experience_description {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 48px;
-  left: 48px;
+  /* position: relative; */
+  /* top: 48px;
+  left: 48px; */
 }
 
 #experience_description span:nth-child(1) {
@@ -219,7 +222,7 @@
 }
 
 #experience_description span:nth-child(2) {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 16px;
 }
 
@@ -236,9 +239,9 @@
 #gradution_image {
   width: 250px;
   height: 160px;
-  position: relative;
-  top: 24px;
-  left: 24px;
+  /* position: relative; */
+  /* top: 24px;
+  left: 24px; */
   border-radius: 8px;
 }
 
@@ -276,19 +279,22 @@
 }
 
 #grades_section {
-  position: relative;
+  /* position: relative;
   left: 330px;
-  top: 72px;
+  top: 72px; */
+  padding-left: 320px;
 }
 #grades_section__1 {
-  position: relative;
+  /* position: relative;
   left: 315px;
-  top: 72px;
+  top: 72px; */
+  padding-left: 310px;
 }
 #grades_section__2 {
-  position: relative;
+  /* position: relative;
   left: 120px;
-  top: 72px;
+  top: 72px; */
+  padding-left: 145px;
 }
 #grades_section button {
   width: auto;
@@ -299,7 +305,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #grades_section__1 button {
@@ -311,7 +317,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #grades_section__2 button {
@@ -323,7 +329,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #education__span {
