@@ -83,7 +83,8 @@ margin-left: 10px;
 /* ********************************************* MAIN ************************************ */
 .main__container{
     display: flex;
-    margin: 150px 100px 100px 100px;
+    /* margin: 150px 100px 100px 100px; */
+    padding: 150px 100px;
     gap: 20px;
 }
 
