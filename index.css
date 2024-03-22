@@ -9,10 +9,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(33, 36, 40, 0.8705882353);
+  background-color: rgba(33, 36, 40,1);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   position: fixed;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   top: 0;
   left: 0;
   padding-top: 16px;
@@ -219,17 +219,17 @@
 }
 
 #experience_description span:nth-child(2) {
-  font-size: x-large;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
 #experience_description span:nth-child(3) {
-  font-size: large;
+  font-size: 18px;
   margin-bottom: 8px;
 }
 
 #experience_description span:nth-child(4) {
-  font-size: small;
+  font-size: 12px;
   margin-bottom: 8px;
 }
 
@@ -251,7 +251,7 @@
 
 #experience_heading span:nth-child(odd) {
   color: #ff014f;
-  font-size: large;
+  font-size: 18px;
 }
 
 #experience_heading span:nth-child(even) {
@@ -268,7 +268,7 @@
 
 #education_heading span:nth-child(odd) {
   color: #ff014f;
-  font-size: large;
+  font-size: 18px;
 }
 
 #education_heading span:nth-child(even) {
@@ -299,7 +299,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 18px;
 }
 
 #grades_section__1 button {
@@ -311,7 +311,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 18px;
 }
 
 #grades_section__2 button {
@@ -323,7 +323,7 @@
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   color: #ff014f;
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 18px;
 }
 
 #education__span {
@@ -340,7 +340,7 @@
 
 #skills_heading span:nth-child(odd) {
   color: #ff014f;
-  font-size: large;
+  font-size: 18px;
 }
 
 #skills_heading span:nth-child(even) {
@@ -348,9 +348,6 @@
 }
 
 #skills__section {
-  /* margin-left: 100px;
-margin-right: 100px;
-margin-top: 32px; */
   display: flex;
   justify-content: center;
   gap: 32px;
@@ -369,5 +366,5 @@ margin-top: 32px; */
 }
 
 #skills__list span {
-  font-size: x-large;
+  font-size: 24px;
 }
