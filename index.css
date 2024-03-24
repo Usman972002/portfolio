@@ -400,66 +400,82 @@
   font-size: 64px;
 }
 
-
-#project__section {
+#project__section{
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 32px;
-  margin-top: 30px;
   position: relative;
-  width: 85%;
-  overflow: hidden;
 }
 
-#project__list {
+#infinite__slider{
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 1.5s ease;
+  border: none;
+  outline: none;
+}
+
+#project__list__items {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
-  height: 350px;
+  width: 350px;
+  height: 300px;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  /* margin: 0px; */
-  flex: 0 0 auto;
-  margin-right: 20px;
-  text-align: center;
+  margin: 0;
 }
 
-#project__list:last-child {
-  margin-right: 0;
+#project__list__items img{
+  width: 280px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-
-.carousel-container {
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 1s ease;
-}
-
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  box-shadow: 10px 10px 19px #131416, -10px -10px 19px #262a2e;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 1px solid black;
+#previous__btn{
   cursor: pointer;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #212428;
+  color: white;
+  position: absolute;
+  left: 90px;
+  top: 45%;
 }
 
-.prev-btn {
-  left: 0;
+#next__btn{
+  cursor: pointer;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #212428;
+  color: white;
+  position: absolute;
+  right: 90px;
+  top: 45%;
 }
 
-.next-btn {
-  right: 0;
+#next__btn:hover{
+  cursor: pointer;
+  color: #ff014f;
+}
+
+#previous__btn:hover{
+  cursor: pointer;
+  color: #ff014f;
 }
