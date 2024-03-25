@@ -6,6 +6,12 @@
     <title>Usman's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="Images/round.png" />
     <link rel="stylesheet" href="index.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script
       src="https://kit.fontawesome.com/1c154df21f.js"
       crossorigin="anonymous"
@@ -25,8 +31,7 @@
           <li><a href="#education_heading">EDUCATION</a></li>
           <li><a href="#skills_heading">SKILLS</a></li>
           <li><a href="#projects_heading">PROJECTS</a></li>
-          <li>RESUME</li>
-          <li>CONTACT</li>
+          <li><a href="#contact_heading">CONTACT</a></li>
         </ul>
       </div>
     </nav>
@@ -66,8 +71,8 @@
         </section>
         <section id="about__section_2">
           <h3>Download My Resume :</h3>
-          <button id="buttons__links">DOWNLOAD RESUME</button>
-          <button id="buttons__links">CONTACT ME</button>
+          <button id="buttons__links"><a href="Files/Mohammed_Usman_Shaik_Resume.pdf" download>DOWNLOAD RESUME</a> </button>
+          <button id="buttons__links"><a href="#contact_heading">CONTACT ME</a></button>
         </section>
       </div>
       <div>
@@ -253,48 +258,84 @@
       <span>My Projects</span>
     </div>
 
-    <section id="project__section">
+    <section class="slider__container">
+      <div class="container">
+        <div class="swiper card_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
 
-      <div id="infinite__slider">
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
 
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>Calculator</span>
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div id="project__list">
+                <img src="Images/cal.png" />
+                <span>Calculator</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>VB62</span>
-        </div>
-
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>VB63</span>
-        </div>
-
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>VB64</span>
-        </div>
-
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>VB65</span>
-        </div>
-
-        <div id="project__list__items">
-          <img src="Images/cal.png" />
-          <span>VB66</span>
-        </div>
-
       </div>
-
-      <div>
-        <button id="previous__btn" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button>
-        <button id="next__btn" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-
     </section>
+
+    <!-- Gap line -->
+    <div id="gappp">
+      <div id="gap_line"></div>
+    </div>
+
+    <div id="contact_heading">
+      <span></span>
+      <span>Get in Touch</span>
+    </div>
+
+    <section id="contact__section">
+      <!-- <div id="contact__form"> -->
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact__form">
+          <input type="hidden" name="access_key" value="3b8613ee-4def-49f1-a52d-9e3dbc3d4cbb">
+          <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" id="button__submit">Submit</button>
+      </form>
+      <!-- </div> -->
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="index.js"></script>
   </body>
 </html>
