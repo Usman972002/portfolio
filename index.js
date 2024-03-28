@@ -28,3 +28,37 @@ var swiper = new Swiper(".card_slider", {
     },
   },
 });
+
+let toggler = document.getElementById("bars__toggle");
+let navbar = document.getElementById("navbar__container");
+let menus = document.getElementById("menu__list");
+
+
+
+function toggleNavbarVisibility() {
+  if (window.innerWidth <= 768) { // Adjust the value as per your requirement
+    navbar.style.display = 'none';
+    menus.addEventListener('click',()=>{
+      navbar.style.display = 'none';
+    })
+  } else {
+    navbar.style.display = 'flex';
+    menus.addEventListener('click',()=>{
+      navbar.style.display = 'flex';
+    })
+  }
+}
+
+// Initial check on page load
+toggleNavbarVisibility();
+toggler.addEventListener('click',()=>{
+  if (navbar.style.display === 'none' || navbar.style.display === '') {
+    navbar.style.display = 'block'; 
+  } else {
+    navbar.style.display = 'none'; 
+  }
+})
+
+
+// Event listener to adjust navbar visibility on window resize
+window.addEventListener('resize', toggleNavbarVisibility);
