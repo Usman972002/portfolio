@@ -32,8 +32,11 @@ var swiper = new Swiper(".card_slider", {
 let toggler = document.getElementById("bars__toggle");
 let navbar = document.getElementById("navbar__container");
 let menus = document.getElementById("menu__list");
+let closeNavbar = document.getElementById("close__navbar");
 
-
+closeNavbar.addEventListener('click',()=>{
+  navbar.style.display = 'none';
+})
 
 function toggleNavbarVisibility() {
   if (window.innerWidth <= 768) { // Adjust the value as per your requirement

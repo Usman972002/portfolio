@@ -23,7 +23,11 @@
       <section id="logo__section">
         <img id="logo__image" src="Images/myself.jpg" />
         <span id="header__name">Usman</span>
+        <button id="close__navbar"><i class="fa-solid fa-x fa-2x"></i></i></button>
       </section>
+      <p id="about__myself">Software Development Engineer with 1+ years of experience managing multiple websites and web application design
+        projects. Adept at developing creative and functional designs, web page layouts, color schemes, and infrastructure to
+        maintain a cohesive website consistent with client’s needs.</p>
       <div>
         <ul id="menu__list">
           <li><a href="#main__container">About</a></li>
@@ -35,7 +39,15 @@
         </ul>
       </div>
     </nav>
-    <span id="bars__toggle"><i class="fa-solid fa-bars"></i></span>
+    <div>
+      <span id="bars__toggle">
+        <div id="logo_and_name">
+        <img id="logo__image__top" src="Images/myself.jpg" />
+        <span id="header__name__top">Usman</span>
+      </div>
+        <i class="fa-solid fa-bars"> </i>
+      </span>
+    </div>
     <!-- Main Container -->
     <main id="main__container">
       <div id="mixed__about__section">
@@ -71,8 +83,14 @@
         </section>
         <section id="about__section_2">
           <h3>Download My Resume :</h3>
-          <button id="buttons__links"><a href="Files/Mohammed_Usman_Shaik_Resume.pdf" download>DOWNLOAD RESUME</a> </button>
-          <button id="buttons__links"><a href="#contact_heading">CONTACT ME</a></button>
+          <button id="buttons__links">
+            <a href="Files/Mohammed_Usman_Shaik_Resume.pdf" download
+              >DOWNLOAD RESUME</a
+            >
+          </button>
+          <button id="buttons__links">
+            <a href="#contact_heading">CONTACT ME</a>
+          </button>
         </section>
       </div>
       <div>
@@ -94,7 +112,7 @@
     </div>
     <section id="experience__section">
       <div id="experience_1">
-        <img id="gradution_image" src="Images/MARSLOGO.jpeg" />
+        <img id="experience_image" src="Images/MARSLOGO.jpeg" />
         <div id="experience_description">
           <span>Aug 2023 - Present</span>
           <span>Mars Track Technology PVT LTD</span>
@@ -108,7 +126,7 @@
       </div>
 
       <div id="experience_1">
-        <img id="gradution_image" src="Images/MARSLOGO.jpeg" />
+        <img id="experience_image" src="Images/MARSLOGO.jpeg" />
         <div id="experience_description">
           <span>Mar 2023 - Jul 2023</span>
           <span>Mars Track Technology PVT LTD</span>
@@ -134,7 +152,7 @@
     </div>
     <section id="experience__section">
       <!-- BE -->
-      <div id="experience_1">
+      <div id="graduation_1">
         <img id="gradution_image" src="Images/AMC.jpeg" />
         <div id="experience_description">
           <span id="education__span">2019 - 2023</span>
@@ -146,26 +164,26 @@
         </section>
       </div>
       <!-- INTERMEDIATE -->
-      <div id="experience_1">
+      <div id="graduation_1">
         <img id="gradution_image" src="Images/Narayana.webp" />
         <div id="experience_description">
           <span id="education__span">2017 - 2019</span>
           <span>NARAYANA JUNIOR COLLEGE , Vijayawada, India</span>
-          <span>INTERMEDIATE</span>
+          <span>Intermediate(10+2)</span>
         </div>
         <section id="grades_section__1">
           <button>CGPA 9.1</button>
         </section>
       </div>
       <!-- 10TH -->
-      <div id="experience_1">
+      <div id="graduation_1">
         <img id="gradution_image" src="Images/school.jpg" />
         <div id="experience_description">
           <span id="education__span">March 2017</span>
           <span
             >ST THERESAS ENGLISH MEDIUM HIGH SCHOOL , Vijayawada, India</span
           >
-          <span>SECONDARY SCHOOL</span>
+          <span>Secondary School (10th)</span>
         </div>
         <section id="grades_section__2">
           <button>CGPA 9.5</button>
@@ -323,10 +341,18 @@
 
     <section id="contact__section">
       <!-- <div id="contact__form"> -->
-        <form action="https://api.web3forms.com/submit" method="POST" id="contact__form">
-          <input type="hidden" name="access_key" value="3b8613ee-4def-49f1-a52d-9e3dbc3d4cbb">
-          <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="contact__form"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="3b8613ee-4def-49f1-a52d-9e3dbc3d4cbb"
+        />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit" id="button__submit">Submit</button>
       </form>
